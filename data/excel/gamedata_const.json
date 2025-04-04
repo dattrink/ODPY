@@ -899,6 +899,16 @@
   "rejectSpCharMission": 1669881600,
   "addedRewardDisplayZone": "main_9",
   "oneDiamondAp": 135,
+  "charRotationPresetMaxCnt": 4,
+  "charRotationSkinListMaxCnt": 20,
+  "defaultCRPresetCharId": "char_002_amiya",
+  "defaultCRPresetCharSkinId": "char_002_amiya#1",
+  "defaultCRPresetBGId": "bg_rhodes_day",
+  "defaultCRPresetThemeId": "tm_rhodes_day",
+  "defaultCRPresetName": "未命名界面配置",
+  "charRotationPresetTrackTs": 1733371200,
+  "uniequipArchiveSysTrackTs": 1705896000,
+  "manufactPromptTime": 3,
   "richTextStyles": {
     "mission.levelname": "<color=#FFDE00>{0}</color>",
     "mission.number": "<color=#FFDE00>{0}</color>",
@@ -984,6 +994,10 @@
     "act.missiontips": "<color=#d9bd6a>{0}</color>",
     "lv.hdbg": "<color=#7ba61f>{0}</color>",
     "tu.ht": "<color=#ff8d00>{0}</color>",
+    "multiv3.teambuff": "<color=#d0294c>{0}</color>",
+    "multiv3.matchdesc": "<color=#2ea0af>{0}</color>",
+    "multiv3.unlocktoast": "<color=#ff3a64>{0}</color>",
+    "multiv3.photodesc": "<color=#31acbc>{0}</color>",
     "acdm.award": "<color=#04d3a3>{0}</color>",
     "acdm.milestone": "<color=#2da186>{0}</color>",
     "acdm.hudtip": "<color=#04d3a3>{0}</color>",
@@ -1042,7 +1056,7 @@
   "commonPotentialLvlUpCount": 4,
   "weeklyOverrideDesc": "",
   "voucherDiv": 5,
-  "recruitPoolVersion": 17,
+  "recruitPoolVersion": 18,
   "v006RecruitTimeStep1Refresh": 1577172600,
   "v006RecruitTimeStep2Check": 1577154600,
   "v006RecruitTimeStep2Flush": 1577649600,
@@ -1350,6 +1364,11 @@
       "termName": "起飞",
       "description": "不阻挡地面敌人且不会被地面敌人攻击，可以阻挡飞行敌人"
     },
+    "ba.physicfragile": {
+      "termId": "ba.physicfragile",
+      "termName": "物理脆弱",
+      "description": "受到的物理伤害提升相应比例（同名效果取最高）"
+    },
     "cc.bd_A_1": {
       "termId": "cc.bd_A_1",
       "termName": "念力",
@@ -1533,7 +1552,7 @@
     "cc.g.sui": {
       "termId": "cc.g.sui",
       "termName": "岁",
-      "description": "包含以下干员\n年、夕、令、重岳、黍"
+      "description": "包含以下干员\n年、夕、令、重岳、黍、余"
     },
     "cc.g.glasgow": {
       "termId": "cc.g.glasgow",
@@ -1553,7 +1572,7 @@
     "cc.g.bs": {
       "termId": "cc.g.bs",
       "termName": "黑钢国际",
-      "description": "包含以下干员\n雷蛇、芙兰卡、杰西卡、香草、杏仁"
+      "description": "包含以下干员\n雷蛇、芙兰卡、杰西卡、香草、杏仁、寻澜"
     },
     "cc.g.siracusa": {
       "termId": "cc.g.siracusa",
@@ -1673,7 +1692,7 @@
     "cc.tag.durin": {
       "termId": "cc.tag.durin",
       "termName": "杜林族",
-      "description": "包含以下干员\n至简、桃金娘、褐果、杜林"
+      "description": "包含以下干员\n至简、桃金娘、褐果、杜林、特克诺"
     },
     "cc.tag.mh": {
       "termId": "cc.tag.mh",
@@ -1697,8 +1716,8 @@
     }
   },
   "storyReviewUnlockItemLackTip": "事相碎片数量不足，请前往采购凭证区或活动期间商店获取",
-  "dataVersion": "56.4.0",
-  "resPrefVersion": "56d0d0",
+  "dataVersion": "59.6.0",
+  "resPrefVersion": "59d0d0",
   "announceWebBusType": "ak_announcement",
   "videoPlayerWebBusType": "ak_video_player",
   "gachaLogBusType": "ak_gacha_log",
@@ -1774,12 +1793,20 @@
     "hammer": "PHYSICAL",
     "alchemist": "PHYSICAL",
     "primprotector": "PHYSICAL",
-    "skywalker": "PHYSICAL"
+    "skywalker": "PHYSICAL",
+    "soulcaster": "MAGICAL"
   },
   "classicProtectChar": [
     "char_252_bibeak",
     "char_336_folivo",
     "char_402_tuye",
     "char_4043_erato"
-  ]
+  ],
+  "birthdaySettingDesc": "检测到信息缺失，请补全你的出生日期。\n<size=21><color=#0075a9>罗德岛将在生日当天通过邮件为你配发额外物资。</color></size>",
+  "birthdaySettingConfirmDesc": "Dr.{0}，你的出生日期是{1}月{2}日，是否立即提交？\n\n<color=#b84040>生日确定后将无法更改</color>",
+  "birthdaySettingLeapConfirmDesc": "Dr.{0}，你的出生日期是{1}月{2}日，是否立即提交？\n\n<color=#b84040>生日确定后将无法更改，在非闰年，你的物资将在{3}月{4}日通过邮件配发</color>",
+  "leapBirthdayRewardMonth": 2,
+  "leapBirthdayRewardDay": 28,
+  "birthdaySettingShowStageId": "tr_05",
+  "isBirthdayFuncEnabled": true
 }
